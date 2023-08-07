@@ -1,0 +1,37 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"] - Event</title>
+
+    <link href="~/fullcalendar-6.1.8/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/fullcalendar-6.1.8/modernizr-2.6.2.js"></script>
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+    <script src="~/fullcalendar-6.1.8/jquery-1.10.2.min.js"></script>
+    <script src="~/fullcalendar-6.1.8/bootstrap.min.js"></script>
+
+    <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" media="print" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <!-- Add other script references here if needed -->
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
